@@ -11,5 +11,3 @@ This is **bold** text, and this is *emphasized* text.
 Visit the [Hugo](https://gohugo.io) website!
 
 $$a^2+b^2=c^2$$![img](/landscape.png)
-
-$$a^2+b^2=c^2$$![img](/landscape.png)
