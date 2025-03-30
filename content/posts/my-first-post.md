@@ -17,3 +17,5 @@ sencode
 dfa
 
 third test
+
+fouth test
