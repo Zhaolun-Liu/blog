@@ -8,4 +8,4 @@ title = 'My First Post'
 
 This is **bold** text, and this is *emphasized* text.
 
-Visit the [Zhaoun Liu](../../../html) website!
+Visit the [Zhaoun Liu](academic_html/index.html) website!
