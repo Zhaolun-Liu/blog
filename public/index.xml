@@ -2,25 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>老刘记事</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:50830/</link>
     <description>Recent content on 老刘记事</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Mar 2025 09:55:23 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Mar 2025 11:12:30 +0300</lastBuildDate>
+    <atom:link href="http://localhost:50830/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Fri, 28 Mar 2025 09:55:23 +0300</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;&#xA;&lt;p&gt;Visit the &lt;a href=&#34;../../academic_html/index.html&#34;&gt;Zhaoun Liu&lt;/a&gt; website!&lt;/p&gt;</description>
+      <title>20250330 2try</title>
+      <link>http://localhost:50830/posts/2025/20250330-2try/</link>
+      <pubDate>Sun, 30 Mar 2025 11:12:30 +0300</pubDate>
+      <guid>http://localhost:50830/posts/2025/20250330-2try/</guid>
+      <description>&lt;p&gt;Second try&lt;/p&gt;&#xA;\[a^2+b^2=c^2\]$$c^2=a^2+b^2$$</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/math-examples/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/math-examples/</guid>
+      <title>20250330 新开始</title>
+      <link>http://localhost:50830/posts/20250330-%E6%96%B0%E5%BC%80%E5%A7%8B/</link>
+      <pubDate>Sun, 30 Mar 2025 11:10:14 +0300</pubDate>
+      <guid>http://localhost:50830/posts/20250330-%E6%96%B0%E5%BC%80%E5%A7%8B/</guid>
+      <description>&lt;p&gt;new start&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>euqation tempalte</title>
+      <link>http://localhost:50830/posts/math-examples/</link>
+      <pubDate>Sun, 30 Mar 2025 11:10:14 +0300</pubDate>
+      <guid>http://localhost:50830/posts/math-examples/</guid>
       <description>&lt;p&gt;This is an inline \(a^*=x-b^*\) equation.&lt;/p&gt;&#xA;&lt;p&gt;These are block equations:&lt;/p&gt;&#xA;\[a^*=x-b^*\]\[ a^*=x-b^* \]\[&#xA;a^*=x-b^*&#xA;\]&lt;p&gt;These are also block equations:&lt;/p&gt;&#xA;$$a^*=x-b^*$$$$ a^*=x-b^* $$$$&#xA;a^*=x-b^*&#xA;$$</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:50830/posts/my-first-post/</link>
+      <pubDate>Fri, 28 Mar 2025 09:55:23 +0300</pubDate>
+      <guid>http://localhost:50830/posts/my-first-post/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Visit the &lt;a href=&#34;../../academic_html/index.html&#34;&gt;Zhaoun Liu&lt;/a&gt; website!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
