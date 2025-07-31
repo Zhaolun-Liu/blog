@@ -6,5 +6,6 @@ title = 'My First Post'
 
 ## Introduction
 
+This is a test on github
 
 Visit the [Zhaoun Liu](../../academic_html/index.html) website!
