@@ -1,7 +1,7 @@
 +++
 date = '2025-03-30T11:10:14+03:00'
 draft = true
-title = 'euqation tempalte'
+title = '2024 euqation tempalte'
 [params]
   math = true
 +++

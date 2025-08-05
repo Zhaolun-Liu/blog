@@ -16,25 +16,25 @@
       <description>&lt;p&gt;Second try&lt;/p&gt;&#xA;\[a^2+b^2=c^2\]$$c^2=a^2+b^2$$</description>
     </item>
     <item>
-      <title>20250330 新开始</title>
-      <link>http://localhost:1313/posts/20250330-%E6%96%B0%E5%BC%80%E5%A7%8B/</link>
+      <title>2024 euqation tempalte</title>
+      <link>http://localhost:1313/posts/2024/math-examples/</link>
       <pubDate>Sun, 30 Mar 2025 11:10:14 +0300</pubDate>
-      <guid>http://localhost:1313/posts/20250330-%E6%96%B0%E5%BC%80%E5%A7%8B/</guid>
-      <description>&lt;p&gt;new start&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>euqation tempalte</title>
-      <link>http://localhost:1313/posts/math-examples/</link>
-      <pubDate>Sun, 30 Mar 2025 11:10:14 +0300</pubDate>
-      <guid>http://localhost:1313/posts/math-examples/</guid>
+      <guid>http://localhost:1313/posts/2024/math-examples/</guid>
       <description>&lt;p&gt;This is an inline \(a^*=x-b^*\) equation.&lt;/p&gt;&#xA;&lt;p&gt;These are block equations:&lt;/p&gt;&#xA;\[a^*=x-b^*\]\[ a^*=x-b^* \]\[&#xA;a^*=x-b^*&#xA;\]&lt;p&gt;These are also block equations:&lt;/p&gt;&#xA;$$a^*=x-b^*$$$$ a^*=x-b^* $$$$&#xA;a^*=x-b^*&#xA;$$</description>
     </item>
     <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <title>20250330 新开始</title>
+      <link>http://localhost:1313/posts/2025/20250330-%E6%96%B0%E5%BC%80%E5%A7%8B/</link>
+      <pubDate>Sun, 30 Mar 2025 11:10:14 +0300</pubDate>
+      <guid>http://localhost:1313/posts/2025/20250330-%E6%96%B0%E5%BC%80%E5%A7%8B/</guid>
+      <description>&lt;p&gt;new start&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Academic Website</title>
+      <link>http://localhost:1313/posts/2025/my-first-post/</link>
       <pubDate>Fri, 28 Mar 2025 09:55:23 +0300</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Visit the &lt;a href=&#34;../../academic_html/index.html&#34;&gt;Zhaoun Liu&lt;/a&gt; website!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2025/my-first-post/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Before I joint Aramco, I built the following academci webside.&#xA;please  visit the &lt;a href=&#34;../../academic_html/index.html&#34;&gt;Zhaoun Liu&lt;/a&gt; website!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
