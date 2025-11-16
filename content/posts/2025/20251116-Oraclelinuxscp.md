@@ -155,12 +155,3 @@ Subsystem sftp internal-sftp
 🏁 结语
 
 这是一次典型的“SSH 能连但 SFTP 不工作”的问题，由于 SFTP 子系统依赖额外配置，因此更容易出错。
-
-希望这篇排查记录能帮助到有类似问题的朋友。如果你在 Oracle Linux / OpenSSH / SFTP 配置方面还有问题，也欢迎继续讨论 👇
-
-我可以帮你写：
-	•	一键配置脚本
-	•	更安全的 SFTP chroot 环境
-	•	仅允许用户 SFTP 的最小权限方案
-
-随时告诉我！

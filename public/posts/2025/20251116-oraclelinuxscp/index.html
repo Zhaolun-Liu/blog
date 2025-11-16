@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南） | 老刘记事</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="🛠 Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）
+在部署 Oracle Linux 服务器时，我遇到一个奇怪的问题：
+•	使用 scp 可以正常通过 SSH 复制文件
+•	使用 sftp（无论是命令行还是 FileZilla）却始终报错：
+Fatal: unable to initialise SFTP on server: could not connect
+这篇文章详细记录了从排查到最终解决问题的整个过程，希望对遇到相同问题的朋友有所帮助。
+⸻
+📌 现象与错误日志
+从本地使用 SFTP 客户端连接 Oracle Linux 服务器时，日志输出：
+Connected to 
+Fatal: unable to initialise SFTP on server: could not connect
+但是 scp 却正常工作。
+这说明：
+•	SSH 服务正常
+•	用户、密钥、端口都正常
+•	唯独 SFTP 子系统无法初始化
+⸻
+🔍 1. 初步排查：确认 SFTP 子系统配置">
+    <meta name="generator" content="Hugo 0.145.0">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/2025/20251116-oraclelinuxscp/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/2025/20251116-oraclelinuxscp/">
+  <meta property="og:site_name" content="老刘记事">
+  <meta property="og:title" content="Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）">
+  <meta property="og:description" content="🛠 Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）
+在部署 Oracle Linux 服务器时，我遇到一个奇怪的问题： •	使用 scp 可以正常通过 SSH 复制文件 •	使用 sftp（无论是命令行还是 FileZilla）却始终报错：
+Fatal: unable to initialise SFTP on server: could not connect
+这篇文章详细记录了从排查到最终解决问题的整个过程，希望对遇到相同问题的朋友有所帮助。
+⸻
+📌 现象与错误日志
+从本地使用 SFTP 客户端连接 Oracle Linux 服务器时，日志输出：
+Connected to Fatal: unable to initialise SFTP on server: could not connect
+但是 scp 却正常工作。
+这说明： •	SSH 服务正常 •	用户、密钥、端口都正常 •	唯独 SFTP 子系统无法初始化
+⸻
+🔍 1. 初步排查：确认 SFTP 子系统配置">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-16T08:31:44+03:00">
+    <meta property="article:modified_time" content="2025-11-16T08:31:44+03:00">
+
+  <meta itemprop="name" content="Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）">
+  <meta itemprop="description" content="🛠 Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）
+在部署 Oracle Linux 服务器时，我遇到一个奇怪的问题： •	使用 scp 可以正常通过 SSH 复制文件 •	使用 sftp（无论是命令行还是 FileZilla）却始终报错：
+Fatal: unable to initialise SFTP on server: could not connect
+这篇文章详细记录了从排查到最终解决问题的整个过程，希望对遇到相同问题的朋友有所帮助。
+⸻
+📌 现象与错误日志
+从本地使用 SFTP 客户端连接 Oracle Linux 服务器时，日志输出：
+Connected to Fatal: unable to initialise SFTP on server: could not connect
+但是 scp 却正常工作。
+这说明： •	SSH 服务正常 •	用户、密钥、端口都正常 •	唯独 SFTP 子系统无法初始化
+⸻
+🔍 1. 初步排查：确认 SFTP 子系统配置">
+  <meta itemprop="datePublished" content="2025-11-16T08:31:44+03:00">
+  <meta itemprop="dateModified" content="2025-11-16T08:31:44+03:00">
+  <meta itemprop="wordCount" content="299">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）">
+  <meta name="twitter:description" content="🛠 Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）
+在部署 Oracle Linux 服务器时，我遇到一个奇怪的问题： •	使用 scp 可以正常通过 SSH 复制文件 •	使用 sftp（无论是命令行还是 FileZilla）却始终报错：
+Fatal: unable to initialise SFTP on server: could not connect
+这篇文章详细记录了从排查到最终解决问题的整个过程，希望对遇到相同问题的朋友有所帮助。
+⸻
+📌 现象与错误日志
+从本地使用 SFTP 客户端连接 Oracle Linux 服务器时，日志输出：
+Connected to Fatal: unable to initialise SFTP on server: could not connect
+但是 scp 却正常工作。
+这说明： •	SSH 服务正常 •	用户、密钥、端口都正常 •	唯独 SFTP 子系统无法初始化
+⸻
+🔍 1. 初步排查：确认 SFTP 子系统配置">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        老刘记事
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2025-11-16T08:31:44+03:00">November 16, 2025</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>🛠 Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）</p>
+<p>在部署 Oracle Linux 服务器时，我遇到一个奇怪的问题：
+•	使用 scp 可以正常通过 SSH 复制文件
+•	使用 sftp（无论是命令行还是 FileZilla）却始终报错：</p>
+<p>Fatal: unable to initialise SFTP on server: could not connect</p>
+<p>这篇文章详细记录了从排查到最终解决问题的整个过程，希望对遇到相同问题的朋友有所帮助。</p>
+<p>⸻</p>
+<p>📌 现象与错误日志</p>
+<p>从本地使用 SFTP 客户端连接 Oracle Linux 服务器时，日志输出：</p>
+<p>Connected to <!-- raw HTML omitted -->
+Fatal: unable to initialise SFTP on server: could not connect</p>
+<p>但是 scp 却正常工作。</p>
+<p>这说明：
+•	SSH 服务正常
+•	用户、密钥、端口都正常
+•	唯独 SFTP 子系统无法初始化</p>
+<p>⸻</p>
+<p>🔍 1. 初步排查：确认 SFTP 子系统配置</p>
+<p>Oracle Linux 使用 OpenSSH，SFTP 子系统通常由 sshd_config 中以下内容提供：</p>
+<p>sudo grep -i sftp /etc/ssh/sshd_config</p>
+<p>输出：</p>
+<p>Subsystem sftp /usr/libexec/openssh/sftp-server</p>
+<p>看似没问题，但路径是否真实存在仍需确认：</p>
+<p>ls -l /usr/libexec/openssh/sftp-server</p>
+<p>部分 Oracle 镜像中，这个路径可能不存在（尤其是升级后），导致客户端初始化 SFTP 失败。</p>
+<p>⸻</p>
+<p>🔍 2. 服务器本地测试 SFTP</p>
+<p>为了确认问题是不是客户端导致的，在服务器上直接执行：</p>
+<p>sftp opc@localhost</p>
+<p>得到：</p>
+<p>Permission denied (publickey,gssapi-keyex,gssapi-with-mic)
+Couldn&rsquo;t read packet: Connection reset by peer</p>
+<p>这是因为本地执行时没有带私钥，认证失败，但明确说明：</p>
+<p>✔ SFTP 请求确实进入 sshd
+✔ 但子系统可能初始化失败或路径错误</p>
+<p>⸻</p>
+<p>🔧 3. 问题根因：SFTP 子系统可执行路径不匹配</p>
+<p>系统配置了：</p>
+<p>Subsystem sftp /usr/libexec/openssh/sftp-server</p>
+<p>但该文件很可能：
+•	不存在
+•	无执行权限
+•	与当前 OpenSSH 版本不兼容</p>
+<p>最终导致客户端无法初始化 SFTP。</p>
+<p>⸻</p>
+<p>🛠 4. 最终方案：使用 internal-sftp 替代外部可执行文件</p>
+<p>为避免路径匹配问题，可以使用 OpenSSH 内置的 SFTP 子系统：</p>
+<p>⸻</p>
+<p>✔ Step 1：备份原配置</p>
+<p>sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak.$(date +%F)</p>
+<p>⸻</p>
+<p>✔ Step 2：移除旧配置并添加 internal-sftp</p>
+<p>sudo sed -i &lsquo;/^[# ]*Subsystem[ \t]+sftp/d&rsquo; /etc/ssh/sshd_config
+echo &lsquo;Subsystem sftp internal-sftp&rsquo; | sudo tee -a /etc/ssh/sshd_config</p>
+<p>此时文件中应该只有一行：</p>
+<p>Subsystem sftp internal-sftp</p>
+<p>⸻</p>
+<p>✔ Step 3：检查配置并重启</p>
+<p>sudo sshd -t
+sudo systemctl restart sshd</p>
+<p>⸻</p>
+<p>✔ 5. 测试成功！</p>
+<p>本地使用 SFTP 客户端：</p>
+<p>sftp -i ~/.ssh/ssh_key_oracle opc@<!-- raw HTML omitted --></p>
+<p>成功进入：</p>
+<p>sftp&gt;</p>
+<p>FileZilla 也可正常连接，问题彻底解决 🎉</p>
+<p>⸻</p>
+<p>📘 总结：为什么 scp 能用，但 sftp 不行？</p>
+<p>功能	工作机制	受影响？
+scp	使用 SSH shell 传输文件	❌ 不依赖 SFTP 子系统，所以正常
+sftp	依赖 SFTP 子系统 (Subsystem sftp)	✅ 路径错误会导致无法初始化</p>
+<p>因此，当：
+•	Subsystem sftp 配置缺失
+•	指定的 sftp-server 路径不存在
+•	权限问题或 SELinux 限制
+•	多个冲突的 SFTP 配置</p>
+<p>都会导致 scp 正常但 sftp 失败。</p>
+<p>最稳妥的解决方案就是：</p>
+<p>Subsystem sftp internal-sftp</p>
+<p>稳定、高兼容性、无需担心路径变化。</p>
+<p>⸻</p>
+<p>🏁 结语</p>
+<p>这是一次典型的“SSH 能连但 SFTP 不工作”的问题，由于 SFTP 子系统依赖额外配置，因此更容易出错。</p>
+<p>希望这篇排查记录能帮助到有类似问题的朋友。如果你在 Oracle Linux / OpenSSH / SFTP 配置方面还有问题，也欢迎继续讨论 👇</p>
+<p>我可以帮你写：
+•	一键配置脚本
+•	更安全的 SFTP chroot 环境
+•	仅允许用户 SFTP 的最小权限方案</p>
+<p>随时告诉我！</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  老刘记事 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
