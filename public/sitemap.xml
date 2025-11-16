@@ -2,32 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/2025/20250805-howtoautotradefidelity/</loc>
-    <lastmod>2025-08-05T19:29:57+03:00</lastmod>
+    <loc>https://example.org/posts/</loc>
+    <lastmod>2025-11-16T08:31:44+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-08-05T19:29:57+03:00</lastmod>
+    <loc>https://example.org/</loc>
+    <lastmod>2025-11-16T08:31:44+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-08-05T19:29:57+03:00</lastmod>
+    <loc>https://example.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/2025/20250330-2try/</loc>
-    <lastmod>2025-03-30T11:12:30+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024/math-examples/</loc>
-    <lastmod>2025-03-30T11:10:14+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025/20250330-%E6%96%B0%E5%BC%80%E5%A7%8B/</loc>
-    <lastmod>2025-03-30T11:10:14+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025/my-first-post/</loc>
-    <lastmod>2025-03-28T09:55:23+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
-    <lastmod>2025-03-28T09:55:23+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/tags/</loc>
   </url>
 </urlset>
