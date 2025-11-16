@@ -6,4 +6,4 @@ title = 'My Academic Website'
 
 ## Introduction
 Before I joint Aramco, I built the following academci webside.
-please  visit the [Zhaoun Liu](../../academic_html/index.html) website!
+please  visit the [Zhaoun Liu](../../../academic_html/index.html) website!
