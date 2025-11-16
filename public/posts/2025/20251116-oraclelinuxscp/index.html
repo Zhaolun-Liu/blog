@@ -87,7 +87,7 @@ Connected to Fatal: unable to initialise SFTP on server: could not connect
 🔍 1. 初步排查：确认 SFTP 子系统配置">
   <meta itemprop="datePublished" content="2025-11-16T08:31:44+03:00">
   <meta itemprop="dateModified" content="2025-11-16T08:31:44+03:00">
-  <meta itemprop="wordCount" content="299">
+  <meta itemprop="wordCount" content="277">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）">
   <meta name="twitter:description" content="🛠 Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）
@@ -238,12 +238,6 @@ sftp	依赖 SFTP 子系统 (Subsystem sftp)	✅ 路径错误会导致无法初�
 <p>⸻</p>
 <p>🏁 结语</p>
 <p>这是一次典型的“SSH 能连但 SFTP 不工作”的问题，由于 SFTP 子系统依赖额外配置，因此更容易出错。</p>
-<p>希望这篇排查记录能帮助到有类似问题的朋友。如果你在 Oracle Linux / OpenSSH / SFTP 配置方面还有问题，也欢迎继续讨论 👇</p>
-<p>我可以帮你写：
-•	一键配置脚本
-•	更安全的 SFTP chroot 环境
-•	仅允许用户 SFTP 的最小权限方案</p>
-<p>随时告诉我！</p>
 <ul class="pa0">
   
 </ul>

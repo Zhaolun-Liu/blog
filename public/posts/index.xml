@@ -2,11 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 老刘记事</title>
-    <link>https://example.org/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on 老刘记事</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Nov 2025 08:31:44 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）</title>
+      <link>http://localhost:1313/posts/2025/20251116-oraclelinuxscp/</link>
+      <pubDate>Sun, 16 Nov 2025 08:31:44 +0300</pubDate>
+      <guid>http://localhost:1313/posts/2025/20251116-oraclelinuxscp/</guid>
+      <description>&lt;p&gt;🛠 Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）&lt;/p&gt;&#xA;&lt;p&gt;在部署 Oracle Linux 服务器时，我遇到一个奇怪的问题：&#xA;•&#x9;使用 scp 可以正常通过 SSH 复制文件&#xA;•&#x9;使用 sftp（无论是命令行还是 FileZilla）却始终报错：&lt;/p&gt;&#xA;&lt;p&gt;Fatal: unable to initialise SFTP on server: could not connect&lt;/p&gt;&#xA;&lt;p&gt;这篇文章详细记录了从排查到最终解决问题的整个过程，希望对遇到相同问题的朋友有所帮助。&lt;/p&gt;&#xA;&lt;p&gt;⸻&lt;/p&gt;&#xA;&lt;p&gt;📌 现象与错误日志&lt;/p&gt;&#xA;&lt;p&gt;从本地使用 SFTP 客户端连接 Oracle Linux 服务器时，日志输出：&lt;/p&gt;&#xA;&lt;p&gt;Connected to &lt;!-- raw HTML omitted --&gt;&#xA;Fatal: unable to initialise SFTP on server: could not connect&lt;/p&gt;&#xA;&lt;p&gt;但是 scp 却正常工作。&lt;/p&gt;&#xA;&lt;p&gt;这说明：&#xA;•&#x9;SSH 服务正常&#xA;•&#x9;用户、密钥、端口都正常&#xA;•&#x9;唯独 SFTP 子系统无法初始化&lt;/p&gt;&#xA;&lt;p&gt;⸻&lt;/p&gt;&#xA;&lt;p&gt;🔍 1. 初步排查：确认 SFTP 子系统配置&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>20250805 HowToAutoTradeFidelity</title>
+      <link>http://localhost:1313/posts/2025/20250805-howtoautotradefidelity/</link>
+      <pubDate>Tue, 05 Aug 2025 19:29:57 +0300</pubDate>
+      <guid>http://localhost:1313/posts/2025/20250805-howtoautotradefidelity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>20250330 2try</title>
+      <link>http://localhost:1313/posts/2025/20250330-2try/</link>
+      <pubDate>Sun, 30 Mar 2025 11:12:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/2025/20250330-2try/</guid>
+      <description>&lt;p&gt;Second try&lt;/p&gt;&#xA;\[a^2+b^2=c^2\]$$c^2=a^2+b^2$$</description>
+    </item>
+    <item>
+      <title>2024 euqation tempalte</title>
+      <link>http://localhost:1313/posts/2024/math-examples/</link>
+      <pubDate>Sun, 30 Mar 2025 11:10:14 +0300</pubDate>
+      <guid>http://localhost:1313/posts/2024/math-examples/</guid>
+      <description>&lt;p&gt;This is an inline \(a^*=x-b^*\) equation.&lt;/p&gt;&#xA;&lt;p&gt;These are block equations:&lt;/p&gt;&#xA;\[a^*=x-b^*\]\[ a^*=x-b^* \]\[&#xA;a^*=x-b^*&#xA;\]&lt;p&gt;These are also block equations:&lt;/p&gt;&#xA;$$a^*=x-b^*$$$$ a^*=x-b^* $$$$&#xA;a^*=x-b^*&#xA;$$</description>
+    </item>
+    <item>
+      <title>20250330 新开始</title>
+      <link>http://localhost:1313/posts/2025/20250330-%E6%96%B0%E5%BC%80%E5%A7%8B/</link>
+      <pubDate>Sun, 30 Mar 2025 11:10:14 +0300</pubDate>
+      <guid>http://localhost:1313/posts/2025/20250330-%E6%96%B0%E5%BC%80%E5%A7%8B/</guid>
+      <description>&lt;p&gt;new start&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Academic Website</title>
+      <link>http://localhost:1313/posts/2025/my-first-post/</link>
+      <pubDate>Fri, 28 Mar 2025 09:55:23 +0300</pubDate>
+      <guid>http://localhost:1313/posts/2025/my-first-post/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Before I joint Aramco, I built the following academci webside.&#xA;please  visit the &lt;a href=&#34;../../../academic_html/index.html&#34;&gt;Zhaoun Liu&lt;/a&gt; website!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Fri, 28 Mar 2025 09:55:23 +0300</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is a test on github&lt;/p&gt;&#xA;&lt;p&gt;Visit the &lt;a href=&#34;../../academic_html/index.html&#34;&gt;Zhaoun Liu&lt;/a&gt; website!&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

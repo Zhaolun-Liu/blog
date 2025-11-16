@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
@@ -11,12 +11,12 @@
     
     
     
-      <meta name="robots" content="index, follow">
+      <meta name="robots" content="noindex, nofollow">
     
     
 
     
-<link rel="stylesheet" href="/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
 
 
 
@@ -36,10 +36,10 @@
     
 
     
-      <link rel="canonical" href="https://example.org/posts/">
+      <link rel="canonical" href="http://localhost:1313/posts/">
     
 
-    <meta property="og:url" content="https://example.org/posts/">
+    <meta property="og:url" content="http://localhost:1313/posts/">
   <meta property="og:site_name" content="老刘记事">
   <meta property="og:title" content="Posts">
   <meta property="og:locale" content="en_us">
@@ -51,10 +51,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Posts">
 
-      
-    
 	
-  </head><body class="ma0 avenir bg-near-white production">
+  </head><body class="ma0 avenir bg-near-white development">
 
     
 <link
@@ -124,12 +122,167 @@
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
     <section class="flex-ns flex-wrap justify-around mt5">
       
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/2025/20251116-oraclelinuxscp/" class="link black dim">
+        Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>🛠 Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）</p>
+<p>在部署 Oracle Linux 服务器时，我遇到一个奇怪的问题：
+•	使用 scp 可以正常通过 SSH 复制文件
+•	使用 sftp（无论是命令行还是 FileZilla）却始终报错：</p>
+<p>Fatal: unable to initialise SFTP on server: could not connect</p>
+<p>这篇文章详细记录了从排查到最终解决问题的整个过程，希望对遇到相同问题的朋友有所帮助。</p>
+<p>⸻</p>
+<p>📌 现象与错误日志</p>
+<p>从本地使用 SFTP 客户端连接 Oracle Linux 服务器时，日志输出：</p>
+<p>Connected to <!-- raw HTML omitted -->
+Fatal: unable to initialise SFTP on server: could not connect</p>
+<p>但是 scp 却正常工作。</p>
+<p>这说明：
+•	SSH 服务正常
+•	用户、密钥、端口都正常
+•	唯独 SFTP 子系统无法初始化</p>
+<p>⸻</p>
+<p>🔍 1. 初步排查：确认 SFTP 子系统配置</p>
+    </div>
+    <a href="/posts/2025/20251116-oraclelinuxscp/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/2025/20250805-howtoautotradefidelity/" class="link black dim">
+        20250805 HowToAutoTradeFidelity
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      
+    </div>
+    <a href="/posts/2025/20250805-howtoautotradefidelity/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/2025/20250330-2try/" class="link black dim">
+        20250330 2try
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Second try</p>
+\[a^2+b^2=c^2\]$$c^2=a^2+b^2$$
+    </div>
+    <a href="/posts/2025/20250330-2try/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/2024/math-examples/" class="link black dim">
+        2024 euqation tempalte
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>This is an inline \(a^*=x-b^*\) equation.</p>
+<p>These are block equations:</p>
+\[a^*=x-b^*\]\[ a^*=x-b^* \]\[
+a^*=x-b^*
+\]<p>These are also block equations:</p>
+$$a^*=x-b^*$$$$ a^*=x-b^* $$$$
+a^*=x-b^*
+$$
+    </div>
+    <a href="/posts/2024/math-examples/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/2025/20250330-%E6%96%B0%E5%BC%80%E5%A7%8B/" class="link black dim">
+        20250330 新开始
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>new start</p>
+    </div>
+    <a href="/posts/2025/20250330-%E6%96%B0%E5%BC%80%E5%A7%8B/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/2025/my-first-post/" class="link black dim">
+        My Academic Website
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h2 id="introduction">Introduction</h2>
+<p>Before I joint Aramco, I built the following academci webside.
+please  visit the <a href="../../../academic_html/index.html">Zhaoun Liu</a> website!</p>
+    </div>
+    <a href="/posts/2025/my-first-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/my-first-post/" class="link black dim">
+        My First Post
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h2 id="introduction">Introduction</h2>
+<p>This is a test on github</p>
+<p>Visit the <a href="../../academic_html/index.html">Zhaoun Liu</a> website!</p>
+    </div>
+    <a href="/posts/my-first-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
     </section></article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
     &copy;  老刘记事 2025 
   </a>
     <div><div class="ananke-socials"></div>

@@ -1,6 +1,6 @@
 +++
 date = '2025-11-16T08:31:44+03:00'
-draft = true
+draft = false
 title = 'Oracle Linux：scp 能用但 sftp 无法连接的解决记录（完整排查指南）'
 +++
 
